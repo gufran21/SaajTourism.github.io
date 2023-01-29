@@ -1,0 +1,709 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&display=swap');
+/* ######################-----set global properties-----############################## */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+/* ##########################----utility classes---########################## */
+.fnt-wt-300 {
+    font-weight: 300;
+}
+
+.fnt-wt-400 {
+    font-weight: 400;
+}
+
+.fnt-wt-700 {
+    font-weight: 700;
+}
+
+p,
+h1,
+h2,
+h3,
+li,
+a {
+    letter-spacing: 0.1em;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.bh {
+    font-size: 3rem;
+}
+
+.mh {
+    font-size: 2rem;
+}
+
+.sh {
+    font-size: 1.6rem;
+}
+
+.text-red {
+    color: rgb(188, 66, 66);
+}
+
+.text-black {
+    color: black;
+}
+
+.text-white {
+    color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin: 1em;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+.btn-primary {
+    background-color: rgba(255, 255, 255, 0.79);
+    color: rgb(168, 50, 50);
+}
+
+.btn-secondary {
+    color: rgb(168, 50, 50);
+    border: 2px solid rgb(168, 50, 50);
+}
+
+.btn-primary:hover {
+    background-color: whitesmoke;
+}
+
+.btn-secondary:hover {
+    background-color: rgb(228, 225, 225);
+}
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+
+
+}
+/* ###########################---utility classes end----########################### */
+
+
+/* ######################--------header------############################## */
+#header {
+    height: 95vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/background.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+} 
+
+
+/* ###########################----------navbar----------####################################### */
+.navbar {
+    background: linear-gradient(rgba(156, 155, 155, 0.571), rgba(6, 3, 3, 0.416));
+    position: fixed;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+
+
+}
+
+
+.navbar .logo {
+    margin: 10px;
+    width: 20em;
+    float: left;
+}
+
+.navbar .nav-items {
+    float: right;
+    margin-top: 1.5em;
+}
+
+.navbar .nav-items .nav-item {
+    display: inline-block;
+    margin: 1.6em;
+
+}
+
+.navbar::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.navbar .nav-item a {
+    text-transform: uppercase;
+    font-size: 1.6rem;
+
+}
+
+.navbar .nav-item a:hover {
+    border-bottom: 2px solid white;
+}
+/* #########################----------navbar end-------------################################# */
+
+
+/* #########################----------header content or home page content-------------################################# */
+.header-content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+
+}
+
+.header-content h1 {
+    text-transform: uppercase;
+    margin: 10px;
+}
+/* #########################----------header content or home page content end-------------################################# */
+
+
+
+/* #########################----------showcase section-------------################################# */
+.showcase-section {
+    background-color: #ddd;
+    padding: 8rem 0;
+
+
+}
+
+.showcase-section .box {
+    background-color: whitesmoke;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    height: 280px;
+    box-shadow: 0px 0px 20px grey;
+
+}
+
+.showcase-section .box1 {
+    margin-bottom: 5rem;
+}
+
+.showcase-section .box::after {
+    content: '';
+    display: block;
+    clear: both;
+
+}
+
+.box1 .img-box,
+.box2 .text-box {
+    float: left;
+
+}
+
+.box1 .text-box,
+.box2 .img-box {
+    float: right;
+}
+
+.box .img-box {
+    height: 100%;
+    width: 50%;
+}
+
+.box .text-box {
+    height: 100%;
+    width: 50%;
+}
+
+.box .text-box {
+    padding: 2em;
+}
+
+.box .img-box img {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+
+}
+
+.box .text-box h2 {
+    margin-bottom: 0.5em;
+    word-spacing: 0.5rem;
+    text-transform: uppercase;
+
+}
+
+.box .text-box p {
+
+    letter-spacing: 0rem;
+    word-spacing: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+
+.box .btn {
+    font-weight: 400;
+}
+/* #########################----------showcase section end-------------################################# */
+
+
+
+/* #########################----------feature section-------------################################# */
+.feature {
+    background-color: white;
+    padding: 6em;
+}
+
+.feature-box {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    height: 200px;
+    box-shadow: 0px 0px 20px grey;
+
+}
+
+.feature-box .fbox {
+    width: 33.333%;
+    height: 100%;
+    padding: 0.5em;
+    text-align: center;
+    font-weight: 300;
+
+
+}
+
+.feature-box .fbox1 {
+    background-color: black;
+    float: left;
+}
+
+.feature-box .fbox2 {
+    background-color: rgb(248, 91, 91);
+    float: left;
+}
+
+.feature-box .fbox3 {
+    background-color: black;
+    float: right;
+}
+
+.feature-box .fbox h2 {
+    margin: 0.5rem;
+}
+/* ########################-------------feature  section end----------######################### */
+/* ########################-------------about section----------######################### */
+.about {
+
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.about-box {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.about-box .about-heading {
+    text-transform: uppercase;
+    border-bottom: 3px solid red;
+    margin-bottom: 1.5rem;
+}
+
+.about-box .list {
+    margin-top: 2rem;
+    width: 50%;
+    text-align: center;
+}
+
+.about-box .list1 {
+    float: left;
+}
+
+.about-box .list2 {
+
+    float: right;
+}
+
+.about-box::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.about-box .list li::before {
+    content: '\2713';
+    color: red;
+    font-weight: bold;
+    margin: 0.5rem;
+}
+
+.count1,
+.count2,
+.count3,
+.count4 {
+    padding: 0rem 5rem;
+    width: 25%;
+    float: left;
+    margin: 4rem 0rem;
+}
+
+.count::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.reach-out {
+    height: 6rem;
+    background-image: linear-gradient(to right, #f0055d, #f2124d, #f2213c, #ef2f2a, #eb3d12);
+    padding: 1.5em;
+    box-shadow: 0px 0px 20px grey;
+}
+
+.reach-out h2 {
+    display: inline-block;
+}
+
+.reach-out .contact-btn {
+    text-transform: uppercase;
+    border: 2px solid white;
+    float: right;
+
+    padding: 0.2rem 4rem;
+}
+/* ########################-------------about section end----------######################### */
+
+
+/* ########################-------------contact section----------######################### */
+.contact .contact-box {
+    max-width: 1200px;
+    width: 80%;
+    height: 700px;
+    margin: 0 auto;
+    padding: 4rem;
+}
+
+.contact .company-address {
+    float: left;
+    width: 48%;
+    height: 100%;
+    padding: 2rem;
+    margin: 0.5rem;
+    background-color: #f7f7f7;
+    box-shadow: 0px 0px 20px grey;
+}
+
+.contact .form {
+    float: right;
+    width: 48%;
+    height: 100%;
+    padding: 2rem;
+    margin: 0.5rem;
+    background-color: #f7f7f7;
+    box-shadow: 0px 0px 20px grey;
+}
+
+.contact .contact-box::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.company-address h1 {
+    border-bottom: 4px solid red;
+    margin-bottom: 2rem;
+}
+.company-address .contact-item {
+    margin: 2rem;
+}
+
+.company-address span {
+    text-transform: uppercase;
+    margin: 2rem 1.5rem;
+}
+
+.company-address p {
+    padding-left: 2.5rem;
+}
+
+.company-image {
+    margin-top: 4rem;
+    width: 100%;
+    height: 50%;
+}
+
+.company-image .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px inset red;
+
+}
+
+.form h1 {
+    border-bottom: 4px solid red;
+    margin-bottom: 2rem;
+}
+
+.form .form-item {
+    margin: 1rem;
+}
+
+.form .form-item input,
+textarea {
+    padding: 0.3rem;
+    resize: none;
+    width: 100%;
+}
+
+.form .submit-btn {
+    text-transform: uppercase;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    display: block;
+    margin: 2rem auto;
+    padding: 0.5rem 1.5rem;
+    background-image: linear-gradient(to right, #f0055d, #f2124d, #f2213c, #ef2f2a, #eb3d12);
+}
+
+.contact-icon {
+    position: sticky;
+    bottom: 20px;
+    margin-left: 95%;
+    margin-bottom: 2rem;
+}
+
+.contact-icon i {
+    color: green;
+}
+/* ########################-------------contact section end----------######################### */
+
+
+
+
+
+/* ########################-------------footer section----------######################### */
+.footer {
+    background-color: black;
+    text-align: center;
+    padding: 1rem 0rem;
+}
+
+.footer .icon {
+    margin: 0.5rem;
+}
+
+/* ########################-------------footer section end----------######################### */
+
+
+
+/* ########################-------------meadia quiries----------######################### */
+@media (max-width:890px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (min-width:691px) and (max-width:890px) {
+
+    .contact .contact-box {
+        height: 650px;
+        width: 100%;
+    }
+}
+
+@media (max-width:690px) {
+
+    .contact .contact-box {
+        height: 1350px;
+        width: 100%;
+    }
+
+    .contact .company-address {
+        float: none;
+        width: 90%;
+        height: 600px;
+        margin: auto;
+        margin-bottom: 4rem;
+    }
+
+    .contact .form {
+        float: none;
+        width: 90%;
+        margin: auto;
+        height: 600px;
+    }
+
+    .reach-out .contact-btn {
+
+        padding: 0.2rem 2rem;
+    }
+
+    .feature-box .fbox {
+        float: none;
+        width: 100%;
+        height: 200px;
+    }
+
+    .feature-box {
+        max-width: 800px;
+        width: 80%;
+        margin: 0 auto;
+        height: 600px;
+        box-shadow: 0px 0px 20px grey;
+
+    }
+}
+
+@media (max-width:630px) {
+
+    .showcase-section .box {
+
+        max-width: 800px;
+        width: 70%;
+        margin: 4rem auto;
+        height: 400px;
+
+    }
+
+    .box .img-box,
+    .box .text-box {
+        float: none;
+    }
+
+    .box .img-box,
+    .box .text-box {
+        height: 200px;
+        width: 100%;
+    }
+
+    .reach-out {
+        height: 10rem;
+    }
+
+    .reach-out h2 {
+        display: block;
+    }
+
+    .reach-out .contact-btn {
+        float: none;
+        display: block;
+        width: 170px;
+        margin: auto;
+        margin-top: 15px;
+        padding: 0.2rem 2rem;
+    }
+    .contact-icon {
+        margin-left: 90%;
+    }
+}
+
+@media (max-width:530px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        max-width: 1200px;
+        width: 100%;;
+        left: 0;
+        margin: 0 auto;
+    
+
+    }
+
+    .count1,
+    .count2,
+    .count3,
+    .count4 {
+        margin: 4rem 3rem;
+    }
+
+    .navbar .logo {
+        display: block;
+        margin: 3px auto;
+        width: 15em;
+        float: none;
+    }
+
+    .navbar .nav-items {
+        text-align: center;
+        float: none;
+        width: 70%;
+        margin: auto;
+        padding: 0rem;
+    }
+    .navbar .nav-items .nav-item{
+        margin: 0.5rem 1rem;
+    }
+
+    .showcase-section .box {
+
+        max-width: 800px;
+        width: 80%;
+        margin: 4rem auto;
+        height: 450px;
+
+    }
+
+    .feature-box {
+        width: 90%;
+    }
+
+    .contact .company-address,
+    .contact .form {
+        width: 95%;
+    }
+   
+}
+
+@media (max-width:451px) {
+    .navbar .nav-items {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .reach-out {
+        height: 11rem;
+        margin-top: 10px;
+    }
+}
+@media (max-height:450px){
+    #header{
+        height: 100vmax;
+    }
+}
